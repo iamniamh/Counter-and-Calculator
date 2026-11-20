@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <nav class = "navbar">
+            <h3>Counter & Calculator</h3>
+            <ul class = "navlinks">
+                <li><a href="index.html">Counter</a></li>
+                <li><a href="calcpage.html">Calculator</a></li>
+            </ul>
+    </nav>    
+        
+    <main>
+        <div class="counterbox">
+            <h1>Counter</h1>
+            <p id = "displayedNumber">
+                0
+            </p>
+            <div class="history" id="savedvalue">
+            </div>
+            <div id="savelim">
+            </div>
+            <div class="buttons">
+                <button class = "btn" id = "decbtn" onclick="decreaseCount()"> Decrease </button>
+                <button class = "btn" id = "resetbtn" onclick="resetCount()"> Reset </button>
+                <button class = "btn" id = "incbtn" onclick="increaseCount()"> Increase </button>
+            </div>
+            <div class="savebuttons">
+                <button class = "btn" id = "savebtn" onclick="saveCount()">Save</button>
+                <button class = "btn" id = "clearbtn" onclick="clearHistory()">Clear History</button>
+            </div>
+        </div>
+        
+    </main>
+
+<script src="app.js"></script>
+</body>
+</html>

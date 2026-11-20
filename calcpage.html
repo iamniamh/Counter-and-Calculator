@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="calcstyles.css">
+</head>
+<body>
+    
+    <nav class = "navbar">
+            <h3>Counter & Calculator</h3>
+            <ul class = "navlinks">
+                <li><a href="index.html">Counter</a></li>
+                <li><a href="calcpage.html">Calculator</a></li>
+            </ul>
+    </nav>    
+        
+    <main>
+        <div class="calcbox">
+            <h1>Calculator</h1>
+
+            <input id = "display" readonly>
+
+            <div class="buttonrow" id="rowone">
+                <button class="operators" id = "allclear" onclick="clearDisplay()"> AC </button>
+                <button class="operators" id = "percentage" onclick="updateDisplay('/100')"> % </button>
+                <button class="operators" id = "exponent" onclick="updateDisplay('**')"> ^ </button>
+                <button class="operators" id = "backspace" onclick="backspace()">Del</button>
+            </div>
+
+            <div class="buttonrow" id="rowtwo">
+                <button class="operators" id = "division" onclick="updateDisplay('/')">÷</button>
+                <button id = "digit7" onclick="updateDisplay('7')"> 7 </button>
+                <button id = "digit8" onclick="updateDisplay('8')"> 8 </button>
+                <button id = "digit9" onclick="updateDisplay('9')"> 9 </button>
+            </div>
+
+            <div class="buttonrow" id="rowthree">
+                <button class="operators" id = "multiplication" onclick="updateDisplay('*')">x</button>
+                <button id = "digit4" onclick="updateDisplay('4')"> 4 </button>
+                <button id = "digit5" onclick="updateDisplay('5')"> 5 </button>
+                <button id = "digit6" onclick="updateDisplay('6')"> 6 </button>
+            </div>
+
+            <div class="buttonrow" id="rowfour">
+                <button class="operators" id = "subtraction" onclick="updateDisplay('-')">-</button>
+                <button id = "digit1" onclick="updateDisplay('1')"> 1 </button>
+                <button id = "digit2" onclick="updateDisplay('2')"> 2 </button>
+                <button id = "digit3" onclick="updateDisplay('3')"> 3 </button>
+            </div>
+            
+            <div class="buttonrow" id="rowfive">
+                <button class="operators" id = "addition" onclick="updateDisplay('+')"> + </button>
+                <button id = "decimailpoint" onclick="updateDisplay('-')"> . </button>
+                <button id = "digit0" onclick="updateDisplay('0')"> 0 </button>
+                <button id = "equals" onclick="calculate()">=</button>
+            </div>
+            
+        </div>
+        
+    </main>
+
+<script src="calcapp.js"></script>
+</body>
+</html>

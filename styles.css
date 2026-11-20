@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oswald:wght@200..700&display=swap');
+
+:root{
+
+     /* dark shades of primary color*/
+  --clr-primary-1: hsl(300, 86%, 17%);
+  --clr-primary-2: hsl(306, 77%, 27%);
+  --clr-primary-3: hsl(309, 72%, 37%);
+  --clr-primary-4: hsl(309, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: hsl(310, 78%, 60%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(303, 90%, 70%);
+  --clr-primary-7: hsl(310, 90%, 76%);
+  --clr-primary-8: hsl(308, 86%, 81%);
+  --clr-primary-9: hsl(309, 90%, 88%);
+  --clr-primary-10: hsl(318, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(302, 61%, 16%);
+  --clr-grey-2: hsl(318, 39%, 23%);
+  --clr-grey-3: hsl(311, 35%, 30%);
+  --clr-grey-4: hsl(312, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(317, 22%, 49%);
+  --clr-grey-6: hsl(313, 23%, 60%);
+  --clr-grey-7: hsl(310, 27%, 70%);
+  --clr-grey-8: hsl(313, 31%, 80%);
+  --clr-grey-9: hsl(313, 32%, 89%);
+  --clr-grey-10: hsl(300, 100%, 98%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+  --ff-primary: "Oswald", sans-serif;
+  --ff-secondary: "DM Sans", sans-serif;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+
+body {
+  font-family: var(--ff-secondary);
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  font-family: var(--ff-primary);
+}
+
+h1 {
+  font-size: 37px;
+  width: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--clr-white);
+  height: 75px;
+  box-shadow: var(--dark-shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  padding: 0;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  color: var(--clr-grey-5);
+  font-size: 12rem;
+  
+  width: 500px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 41px 0 10px 0;
+  padding: 0;
+}
+
+
+nav {
+  background: var(--clr-white);
+  height: 3rem;
+  box-shadow: var(--dark-shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15%;
+  width: auto;
+  margin: 0;
+}
+
+.navbar h3 {
+  color: var(--clr-primary-5);
+}
+
+.navlinks {
+    list-style: none;
+    display: inline-block;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.navlinks li{
+  display: inline-block;
+  padding: 0 0 0 21px;
+}
+
+
+nav a {
+  text-transform: capitalize;
+  font-weight: 550;
+  font-size: 1rem;
+  color: var(--clr-primary-1);
+  letter-spacing: var(--spacing);
+}
+
+nav a:hover {
+  color: var(--clr-primary-5);
+}
+
+.buttons {
+    width: 410px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+
+.btn {
+  font-family: var(--ff-primary);
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--clr-black);
+  letter-spacing: var(--spacing);
+  font-weight: 700;
+  transition: var(--transition);
+  border: 2px solid var(--clr-black);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+}
+
+.btn:hover {
+  color: var(--clr-white);
+  background: var(--clr-black);
+}
+
+.savebuttons {
+    
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding: 0;
+}
+
+#decbtn,#incbtn,#resetbtn {
+  background: var(--clr-black);
+  color: var(--clr-white);
+}
+
+#decbtn:hover,#incbtn:hover,#resetbtn:hover{
+  background: var(--clr-white);
+  color: var(--clr-black);
+}
+
+#savedvalue{
+  text-align: center;
+}
+
+
+main {
+  height:750px;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.counterbox {
+  height:550px;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  width:410px;
+
+  display: grid;
+  grid-template-rows: auto auto 35px 35px auto auto;
+  grid-template-columns: 370px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: start; 
+  row-gap: 5px;
+  column-gap:0px;
+
+  background: var(--clr-white);
+  box-shadow: var(--dark-shadow);
+}
+
+
+#savelim{
+  color:red;
+  margin-bottom: 15px;
+}
